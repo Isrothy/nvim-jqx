@@ -90,10 +90,10 @@ local function populate_qf(ft, type, sort)
 
 	if config.use_quickfix then
 		vim.fn.setqflist(qf_list, " ")
-		vim.cmd("copen")
+		vim.cmd("botright copen")
 	else
 		vim.fn.setloclist(0, qf_list, " ")
-		vim.cmd("lopen")
+		vim.cmd("botright lopen")
 	end
 end
 
